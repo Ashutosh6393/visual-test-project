@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins";
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(166, 231, 166);
+}
+
+.panel {
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.pantop {
+    width: 100%;
+    height: 15%;
+    padding: 0 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(71, 134, 71);
+    gap: 10px;
+}
+
+.elm {
+    display: flex;
+    gap: 15px;
+    color: white;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 40px;
+    font-weight: 700;
+    background-color: white;
+    color: rgb(32, 72, 32);
+    border-radius: 5px;
+}
+
+.panbtm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    height: calc(100% - 15%);
+    padding: 20px;
+}
+
+.bubble {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(63, 127, 63);
+}
+
+.bubble:active {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.886);
+}
+
+.bubble:hover {
+    cursor: pointer;
+    background-color: rgb(39, 79, 39);
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(63, 127, 63);
+    font-size: 18px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    padding: 6px 16px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 29, 0);
+    margin-bottom: 20px;
+}
+
+.top h1 {
+    font-size: 50px;
+}
